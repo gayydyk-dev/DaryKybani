@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Агропромышленная компания: семена, саженцы и корма. Надежные поставки для фермеров, бизнеса и частных клиентов.">
+    <title>ДарыКубани | Продукция для роста вашего хозяйства</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Slab:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+
+<body>
+    <header class="header" id="top">
+        <div class="container header__inner">
+            <a class="logo" href="#hero" aria-label="ДарыКубани, перейти к началу">
+                <img class="logo__image" src="assets/logo.png" alt="ДарыКубани">
+            </a>
+
+            <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="main-nav">☰</button>
+
+            <nav class="nav" id="main-nav" aria-label="Главная навигация">
+                <a class="nav__link" href="#hero">Главная</a>
+                <a class="nav__link" href="#products">Продукция</a>
+                <a class="nav__link" href="#about">О нас</a>
+                <a class="nav__link" href="#contacts">Контакты</a>
+            </nav>
+
+            <div class="header__actions">
+                <a class="btn btn--cta" href="#consultation">Оставить заявку</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="hero">
+            <div class="hero__grain" aria-hidden="true"></div>
+            <div class="container hero__inner">
+                <div class="hero__copy">
+                    <p class="eyebrow">Поставки по всей России</p>
+                    <h1>Продукция, которая помогает вашему хозяйству расти стабильно</h1>
+                    <p>Семена, саженцы и корма от агропромышленной компании с понятными условиями, прогнозируемыми сроками и поддержкой специалистов.</p>
+                    <div class="hero__buttons">
+                        <a class="btn btn--primary" href="#products">Смотреть продукцию</a>
+                        <a class="btn btn--ghost" href="#consultation">Оставить заявку</a>
+                    </div>
+                </div>
+
+                <article class="hero-card" aria-label="Ключевые преимущества">
+                    <h2>Почему выбирают нас</h2>
+                    <ul>
+                        <li>Стабильные поставки и контроль качества</li>
+                        <li>Оптовые цены для фермеров и бизнеса</li>
+                        <li>Помощь в подборе под задачи хозяйства</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="products section" id="products">
+            <div class="container">
+                <div class="section__head">
+                    <p class="eyebrow">Каталог</p>
+                    <h2>Продукция</h2>
+                    <p>Подборка ключевых категорий с базовыми ценами для ориентира.</p>
+                </div>
+
+                <div class="slider" data-slider>
+                    <button class="slider__control" type="button" data-prev aria-label="Предыдущий товар">‹</button>
+
+                    <div class="slider__viewport">
+                        <div class="slider__track">
+                            <article class="product-card is-active" data-slide>
+                                <div class="product-card__media product-card__media--seeds"></div>
+                                <h3>Семена зерновых</h3>
+                                <p>Сорта с высокой всхожестью и адаптацией к разным климатическим зонам.</p>
+                                <p class="price">от 3 200 ₽ / мешок</p>
+                            </article>
+
+                            <article class="product-card" data-slide>
+                                <div class="product-card__media product-card__media--saplings"></div>
+                                <h3>Саженцы плодовых культур</h3>
+                                <p>Проверенный посадочный материал для питомников, садов и частных хозяйств.</p>
+                                <p class="price">от 540 ₽ / шт.</p>
+                            </article>
+
+                            <article class="product-card" data-slide>
+                                <div class="product-card__media product-card__media--feed"></div>
+                                <h3>Корма и добавки</h3>
+                                <p>Сбалансированные составы для устойчивого набора веса и здоровья поголовья.</p>
+                                <p class="price">от 1 950 ₽ / упаковка</p>
+                            </article>
+                        </div>
+                    </div>
+
+                    <button class="slider__control" type="button" data-next aria-label="Следующий товар">›</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="about section" id="about">
+            <div class="container about__grid">
+                <div>
+                    <div class="section__head">
+                        <p class="eyebrow">О компании</p>
+                        <h2>Надежный партнер в агросфере</h2>
+                    </div>
+                    <p>Мы работаем на рынке агропродукции более 10 лет и помогаем хозяйствам любого масштаба получать качественные материалы в нужный срок. Наша миссия: делать закупки понятными, прозрачными и экономически выгодными.</p>
+                    <p>Поддерживаем клиентов на всех этапах: от подбора до консультации по использованию продукции.</p>
+                </div>
+
+                <div class="benefits" aria-label="Преимущества">
+                    <article class="benefit-card">
+                        <h3>Контроль качества</h3>
+                        <p>Работаем с проверенными поставщиками и подтверждаем происхождение партий.</p>
+                    </article>
+                    <article class="benefit-card">
+                        <h3>Гибкая логистика</h3>
+                        <p>Подстраиваем график отгрузок под сезонные пики и график закупок клиента.</p>
+                    </article>
+                    <article class="benefit-card">
+                        <h3>Быстрая связь</h3>
+                        <p>Отвечаем на запросы в день обращения и помогаем определить оптимальный объем.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacts section" id="contacts">
+            <div class="container contacts__grid">
+                <article class="contact-card">
+                    <h2>Контакты</h2>
+                    <ul class="contact-list">
+                        <li><strong>Адрес:</strong> Краснодарский край, р-он Крыловский, ст-ца Крыловская</li>
+                        <li><strong>Email:</strong> <a href="mailto:dkubani9@gmail.com">dkubani9@gmail.com</a></li>
+                        <li><strong>Телефон:</strong> <a href="tel:+74954552277">+7 (918) xxx-22-77</a></li>
+                    </ul>
+                    <p class="note">Пн-Пт: 09:00-18:00, Сб: 10:00-15:00</p>
+                </article>
+
+                <article class="consult-card" id="consultation">
+                    <h2>Оставить заявку</h2>
+                    <p>Оставьте контактные данные, и мы свяжемся с вами в ближайшее время</p>
+
+                    <form id="consultForm" class="form" novalidate>
+                        <label class="form__field">
+              Имя 
+              <input type="text" name="name" required autocomplete="name" placeholder="Ваше имя">
+            </label>
+
+                        <label class="form__field">
+              Телефон 
+              <input type="tel" name="phone" required autocomplete="tel" inputmode="tel" maxlength="18" placeholder="+7 (___) ___-__-__">
+            </label>
+
+                        <label class="form__field">
+              Email
+              <input type="email" name="email" autocomplete="email" placeholder="name@example.com">
+            </label>
+
+                        <label class="form__consent">
+              <input type="checkbox" name="privacyConsent" required>
+              <span>Я соглашаюсь с <a href="assets/privacy_policy.pdf" target="_blank" rel="noopener noreferrer" aria-label="Политика конфиденциальности">политикой конфиденциальности</a> и обработкой персональных данных.</span>
+            </label>
+
+                        <button class="btn btn--primary" type="submit">Отправить</button>
+                        <p class="form__status" role="status" aria-live="polite"></p>
+                    </form>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p>© 2026 ДарыКубани. Все права защищены.</p>
+            <a href="#top"></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
