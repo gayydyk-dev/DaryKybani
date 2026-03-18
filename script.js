@@ -1,5 +1,5 @@
 ﻿(() => {
-    const consultationEndpoint = 'https://formsubmit.co/ajax/dkubani9@gmail.com';
+    const consultationEndpoint = 'https://api.web3forms.com/submit';
 
     const menuToggle = document.querySelector('.menu-toggle');
     const nav = document.querySelector('.nav');
@@ -220,7 +220,7 @@
 
         let formatted = '+7';
         if (code.length) formatted += ` (${code}`;
-        if (code.length === 3) formatted += ')';
+        if (code.length === 3 && digits.length > 4) formatted += ')';
         if (part1.length) formatted += ` ${part1}`;
         if (part2.length) formatted += `-${part2}`;
         if (part3.length) formatted += `-${part3}`;
@@ -270,6 +270,7 @@
 
         try {
             const payload = {
+                access_key: '87d61e36-c49e-4808-bee4-fbe903df4743',
                 name: data.name,
                 phone: data.phone,
                 email: data.email,
