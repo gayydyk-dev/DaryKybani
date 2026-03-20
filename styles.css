@@ -412,6 +412,11 @@ h1 {
     color: var(--color-muted);
 }
 
+.contact-list a[href^="tel:"] {
+    color: #017c03;
+    text-decoration: underline;
+}
+
 .form {
     display: grid;
     gap: 14px;
@@ -603,5 +608,11 @@ h1 {
     }
     .hero {
         padding-top: 52px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header__actions .btn--cta {
+        display: none;
     }
 }
